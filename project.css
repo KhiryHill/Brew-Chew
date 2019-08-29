@@ -1,0 +1,39 @@
+body{
+    background-image: url(../images/cork-board.jpg);
+ }
+ #header-content{
+    background-color: #EFFAFF;
+    box-shadow: 9px 9px 5px #232323;
+ }
+ header{
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+ }
+ #user-info{
+    margin-top: 50px;
+ }
+ label{
+    font-size: 25px;
+    font-weight: bold
+ }
+ main{
+    background-color: #C4B7FF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    box-shadow: 9px 9px 5px #232323;
+ }
+ #input{
+    margin-top: 20px;
+    margin-left: 400px;
+    position: relative;
+ }
+ #button{
+    background-color: #232323;
+    color: #E8E8E8;
+ }
+ #footer-info{
+    background-color: #EFFAFF;
+    box-shadow: 9px 9px 5px #232323;
+ }

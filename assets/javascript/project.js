@@ -1,3 +1,4 @@
+
 $("button").on("click", function() {
     var beer = $(this).attr("");
     var queryURL = "https://server.digitalpour.com/DashboardServer/api/v3/MenuItems///Tap?apiKey=" +
@@ -10,9 +11,14 @@ $.ajax({
 });
 
 
-$(document).ready(function () {
+
+
+
 //Create a function to hide the start button when it is clicked
-$("#startButton").click(function () {
-    $(".start").hide();
-    $(".questions").show();
+$("#noButton").on("click", function () {
+        alert("your not old enough to enter");
+});
+
+$("$yesButton").on("click", function(){
+    $(".ageCheck").close();
 });

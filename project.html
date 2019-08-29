@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <title>Charlotte Bar Crawl</title>
-   <meta charset="UTF-8">
-   <meta name="author" content="team6">
-   <meta name="keywords" content="Bar, Bar Crawl, Charlotte">
-   <meta name="description"
-       content="This is a web app that takes user input and finds the nearest bar to the user as well as it's ratings">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="assets/css/project.css">
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <script src="https://code.jquery.com/jquery-3.4.1.js"
-       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-</head>
-<body>
-   <div class="container">
-       <div id="header-content">
-           <div class="row">
-               <div class="col-lg-6">
-                   <header>
-                       <h1>Charlotte Bar Crawl</h1>
-                   </header>
-               </div>
-               <div class="col-lg-6">
-                   <button id="button" class="btn btn primary">Fill My Cup!</button>
-               </div>
-           </div>
-       </div>
-       <main>
-           <div class="row">
-           <div class="col-md-5">
-               <form id="user-info">
-                   <fieldset id="user-info-form">
-                       <label for="">Please Enter Your Zip Code:</label>
-                       <br>
-                       <div id="input">
-                           <input type="text" id="zip-code" name="zip-code" minlength="5" maxlength="5" size="40"
-                               placeholder="Zip Code">
-                           <input id="button" class="btn btn primary" type="submit">
-                       </div>
-                   </fieldset>
-               </form>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col-lg-12">
-               <h2>Bars In The Area</h2>
-               <table class="table">
-                   <caption>Bars In The Area</caption>
-                   <thead>
-                       <tr>
-                           <th>Bar Name</th>
-                           <th>Location</th>
-                           <th>Population</th>
-                           <th>Rating</th>
-                       </tr>
-                   </thead>
-               </table>
-           </div>
-       </div>
-       </main>
-       <div id="footer-info" class="row">
-           <div class="col-md-4">
-               <div id="contact-us">
-                   <!--Contact Info-->
-               </div>
-               <div class="col-md-4">
-                   <p>All Rights Reserved - &copy;</p>
-               </div>
-               <div class="col-md-4">
-                   <!--External links(Google, Facebook, and Twitter)-->
-               </div>
-           </div>
-       </div>
-   </div>
-   <script src="assets/javascript/project.js"></script>
-   <script src="assets/javascript/bootstrap.min.js"></script>
-</body>
+  <head>
+    <title>Charlotte Bar Crawl</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="team6" />
+    <meta name="keywords" content="Bar, Bar Crawl, Charlotte" />
+    <meta
+      name="description"
+      content="This is a web app that takes user input and finds the nearest bar to the user as well as it's ratings"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header-content">
+        <div class="row">
+          <div class="col-lg-6">
+            <header>
+              <h1>Charlotte Bar Crawl</h1>
+            </header>
+          </div>
+          <div class="col-lg-6">
+            <button id="button" class="btn btn primary">Fill My Cup!</button>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="row">
+          <div class="col-md-5">
+            <form id="user-info">
+              <fieldset id="user-info-form">
+                <label for="">Please Enter Your Zip Code:</label>
+                <br />
+                <div id="input">
+                  <input
+                    type="text"
+                    id="zip-code"
+                    name="zip-code"
+                    minlength="5"
+                    maxlength="5"
+                    size="40"
+                    placeholder="Zip Code"
+                  />
+                  <input id="button" class="btn btn primary" type="submit" />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Bars In The Area</h2>
+            <table class="table">
+              <caption>
+                Bars In The Area
+              </caption>
+              <thead>
+                <tr>
+                  <th>Bar Name</th>
+                  <th>Location</th>
+                  <th>Population</th>
+                  <th>Rating</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </main>
+      <div id="footer-info" class="row">
+        <div class="col-md-4">
+          <div id="contact-us">
+            <!--Contact Info-->
+          </div>
+          <div class="col-md-4">
+            <p>All Rights Reserved - &copy;</p>
+          </div>
+          <div class="col-md-4">
+            <!--External links(Google, Facebook, and Twitter)-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascript/project.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -37,3 +37,16 @@ body{
     background-color: #EFFAFF;
     box-shadow: 9px 9px 5px #232323;
  }
+ #contact-us{
+    text-align: center;
+    font-weight: bold;
+ }
+ footer{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+ }
+ 
+ul{
+   list-style-type: none;
+}

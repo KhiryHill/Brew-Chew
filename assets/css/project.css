@@ -50,3 +50,6 @@ body{
 ul{
    list-style-type: none;
 }
+table{
+   text-align: left;
+}

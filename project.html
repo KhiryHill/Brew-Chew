@@ -8,20 +8,12 @@
    <meta name="description"
        content="This is a web app that takes user input and finds the nearest bar to the user as well as it's ratings">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
+   <link rel="stylesheet" href="assets/css/bootstrap-social.css">
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="project.css">
+   <link rel="stylesheet" href="assets/css/project.css">
    <script src="https://code.jquery.com/jquery-3.4.1.js"
        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
        <script src="project.js"></script>
-=======
-   <link rel="stylesheet" href="project.css">
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-   <script src="https://code.jquery.com/jquery-3.4.1.js"
-       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-       <script src="page-taplist.php"></script>
->>>>>>> 1fdc9fd177ccdc11a3c04e15088064a1b92b3261
 </head>
 <body>
    <div class="container">
@@ -57,13 +49,19 @@
                <div class="col-lg-12">
                    <h2>Bars In The Area</h2>
                    <table class="table">
-                       <caption>Bars In The Area</caption>
+                       <caption class="bar-info">Bars In The Area</caption>
                        <thead>
                            <tr>
                                <th>Bar Name</th>
                                <th>Location</th>
-                               <th>Population</th>
-                               <th>Rating</th>
+                               <th>Telephone</th>
+                               <th>URL</th>
+                           </tr>
+                           <tr>
+                               <td id="bar-name"></td>
+                               <td id="location"></td>
+                               <td id="phone"></td>
+                               <td id="url"></td>
                            </tr>
                        </thead>
                    </table>

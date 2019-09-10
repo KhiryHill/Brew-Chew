@@ -143,6 +143,12 @@ var name = "";
             ResName = response.result.data[i].restaurant_name;
             PhoneNumber = response.result.data[i].restaurant_phone;
             Cuisines = response.result.data[i].cuisines;
+
+
+            $("#rName").append(ResName + "<br>");
+            $("#rLocation").append(address + "<br>");
+            $("#rPhone").append(PhoneNumber+ "<br>");
+            $("#rCuisines").append(Cuisines + "<br>");
             
             console.log(ResName);
             console.log(PhoneNumber);

@@ -108,7 +108,6 @@ tr:nth-child(odd){
    background-color: #232323;
    opacity: .80;
 }
-<<<<<<< HEAD
 body{
    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsWGxSeknmw8QUiEkTc23WHwMElr33wBUcOIW-2zrCIphp0DD9w);*/
    background-image: url(https://www.tahquamenonfallsbrewery.com/images/Tahquamenon_Falls_Brewery/Tahquamenon_Brewery_Lunch1.jpg);
@@ -205,10 +204,3 @@ footer{
 button:hover {
  color: red;
 }
-=======
-
-#footer-info{
-   background-image: url(https://cdn.pixabay.com/photo/2015/02/19/14/16/old-paper-642132_960_720.jpg);
-   border-radius: 15px;
-}
->>>>>>> bce3633535da99c10be0daf6aab5d776795a4327

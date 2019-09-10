@@ -1,55 +1,115 @@
-body{
-   background: url()
- }
- #header-content{
-    background-color: #EFFAFF;
-    box-shadow: 9px 9px 5px #232323;
- }
- header{
-    text-align: center;
-    font-weight: bolder;
-    font-family: cursive;
- }
- #user-info{
-    margin-top: 50px;
- }
- label{
-    font-size: 25px;
-    font-weight: bold
- }
- main{
-    background-color: #C4B7FF;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 25px;
-    box-shadow: 9px 9px 5px #232323;
- }
- #input{
-    margin-top: 20px;
-    margin-left: 400px;
-    position: relative;
- }
- #button{
-    background-color: #232323;
-    color: #E8E8E8;
- }
- #footer-info{
-    background-color: #EFFAFF;
-    box-shadow: 9px 9px 5px #232323;
- }
- #contact-us{
-    text-align: center;
-    font-weight: bold;
- }
- footer{
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 0px;
- }
- 
-ul{
-   list-style-type: none;
+
+ body{
+   background-image: url(https://www.tahquamenonfallsbrewery.com/images/Tahquamenon_Falls_Brewery/Tahquamenon_Brewery_Lunch1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-weight: bold;
 }
-table{
-   text-align: left;
+
+ 
+#under-age {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  font-size: 24px;
+  margin-left: 550px;
+  position: relative;
+  background-image: url(https://www.tabc.state.tx.us/licensing/bg_permit/lessonbuilder_files/No-Alcohol-Under-21-resized.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 525px;
+  color: black;
+  }
+
+  #brewChew, #age-checker {      
+     margin-top: 100px;
+     margin-left: 500px;
+     color: black;
+  }
+     
+
+#brewBtn, #chewBtn, .btn {
+  background-color: #232323;
+  color: #E8E8E8;
+}
+
+
+.page3, .page2, .page1, .page0 {
+   display: none;
+}
+
+
+#header-content{
+   background-image: url(https://cdn.pixabay.com/photo/2015/02/19/14/16/old-paper-642132_960_720.jpg);
+   box-shadow: inset 5px 5px 10px #232323;
+   border-radius: 15px;
+   padding: 2%;
+   text-shadow: 2px 2px 3px #E8E8E8;
+}
+
+header{
+   text-align: center;
+   font-weight: bolder;
+   font-family: cursive;
+   font-size: 40px; 
+}
+
+#user-info{
+   margin-top: 10px;
+}
+
+label{
+   font-size: 25px;
+   font-weight: bold
+}
+
+.text{
+   text-shadow:1.5px 1.5px 2px#E8E8E8;
+}
+
+main{
+   background-image: url(https://cdn.pixabay.com/photo/2015/02/19/14/16/old-paper-642132_960_720.jpg);
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding: 20px;
+   box-shadow: inset 5px 5px 10px #232323;
+   color: #232323;
+   text-shadow: 2px 2px 3px #BCBCBC;
+   border-radius: 15px;
+}
+
+#input{
+   margin-top: 20px;
+   margin-left: 400px;
+   position: relative;
+}
+#button{
+   background-color: #232323;
+   color: #E8E8E8;
+   border-color: #E8E8E8;
+}
+
+#zip{
+   margin-left: 50%;
+   display: inline;
+}
+
+#contact-us{
+  text-align: center;
+  font-weight: bold;
+}
+
+button:hover {
+ color: red;
+}
+
+tr:nth-child(odd){
+   color: #E8E8E8;
+   background-color: #232323;
+   opacity: .80;
+}
+
+#footer-info{
+   background-image: url(https://cdn.pixabay.com/photo/2015/02/19/14/16/old-paper-642132_960_720.jpg);
+   border-radius: 15px;
 }

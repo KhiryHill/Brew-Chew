@@ -22,35 +22,23 @@ $(document).ready(function () {
 
     });
 
+
    
-
-//Create a function to validate user input
-// $("#user-input").validate({
-//     rules: {
-//         fName: "required",
-//         lName: "required"
-//     },
-//     email: {
-//         required: true,
-//         email: true
-//     },
-//     messages: {
-//         fName: "Please enter your firstname.",
-//         lName: "Please enter your lastname."
-//     }, email:{
-//         required: "Please enter an email address.",
-//         email: "Please enter a <em>valid</em> email address."
-//     }
-
-//})
+    var firstName = document.getElementById('fName');
+    var lastName = document.getElementById('lName');
+    var userEmail = document.getElementById('inputEmail');
+   
 
     //Create a function to hide the age validation when the submit button is pressed
     $("#submit").on("click", function () {
         event.preventDefault();
         event.stopPropagation();
-        
-        
 
+        var messages = [];
+        if(firstName.value === '' || userEmail.value === "" || lastName.value === '' ){
+            messages.push('First name is required')
+            return
+        }
 
         modal.style.display = "none";
         $(".page1").hide();
@@ -146,6 +134,7 @@ $(document).ready(function () {
             $("#url").append(website + "<br>");
         }
     });
+
 
 });
 

@@ -2,22 +2,23 @@ body{
     /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsWGxSeknmw8QUiEkTc23WHwMElr33wBUcOIW-2zrCIphp0DD9w);*/
     background-image: url(https://www.tahquamenonfallsbrewery.com/images/Tahquamenon_Falls_Brewery/Tahquamenon_Brewery_Lunch1.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
  }
 
   
  #under-age {
-   margin-top: 50px;
-   margin-bottom: 50px;
+   margin-top: 60px;   
    padding: 20px;
    font-size: 24px;
-   margin-left: 550px;
-   position: relative;
-   background-image: url(https://www.tabc.state.tx.us/licensing/bg_permit/lessonbuilder_files/No-Alcohol-Under-21-resized.gif);
-   background-repeat: no-repeat;
-   background-size: 100%;
+   margin-left: 350px;
+   position: relative;  
    height: 525px;
    color: black;
+   }
+
+   img {
+      height: 400px;
+      width: 300px;
    }
 
    #brewChew, #age-checker {      

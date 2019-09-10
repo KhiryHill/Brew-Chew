@@ -37,7 +37,9 @@
    
     <!--Link Font Awesome-->
     <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
-
+    <!--Link CSShake-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake-slow.min.css">
+ 
 </head>
 
 <body>
@@ -98,20 +100,20 @@
                     <h5 class="modal-title">Please enter your information below: </h5>
                 </div>
                 <div class="modal-body">
-                    <form id="user-input">
+                    <form id="user-input" action="" method="post">
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="fName" placeholder="First name">
+                                <input type="text" class="form-control" id="fName" placeholder="First name" required>
 
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" id="lName" placeholder="Last name">
+                                <input type="text" class="form-control" id="lName" placeholder="Last name" required>
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
 
                             </div>
                         </div>
@@ -138,9 +140,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3" id="under-age">
-                <br><br><br><br><br><br>
-                <p> <strong>Please revisit when you are old enough!</strong></p>
+            <div class="col-md-6" id="under-age">
+                <img class="shake-slow shake-constant"src="https://www.tabc.state.tx.us/licensing/bg_permit/lessonbuilder_files/No-Alcohol-Under-21-resized.gif">
+                <br>
+                <p></p> <strong>Please revisit when you are old enough!</strong></p>
             </div>
         </div>
 
@@ -207,13 +210,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Charlotte Restaurants</h2>
-                    <table class="table">
+                    <table class="rtable">
                         <thead>
                             <tr>
                                 <th>Restaurant Name</th>
                                 <th>Location</th>
                                 <th>Phone Number</th>
-                                <th>Website</th>
+                                <th>Cuisine</th>
                             </tr>
 
                             <tr>

@@ -34,9 +34,14 @@
 
     <!--Link Favicon-->
     <link rel="icon" type="image/png" href="C:\Users\debra\project1\assets\images\favicon.png">
-   
+
     <!--Link Font Awesome-->
     <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!--Link CSShake-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake-slow.min.css">
+
 </head>
 
 <body>
@@ -53,7 +58,7 @@
         </div>
         <div class="row" id="brewChew">
             <h1 class="text">What are you in the mood for?</h1>
-            <div class="col-lg-12" id="brew">
+            <div class="col-lg-6" id="brew">
 
                 <button type="button" class="btn btn-lg btn-block" id="brewBtn">Brew <i
                         class="fas fa-beer"></i></button>
@@ -100,18 +105,20 @@
                     <form id="user-input">
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="fName" placeholder="First name" required="required">
+                                <input type="text" class="form-control" id="fName" placeholder="First name"
+                                    required="required">
 
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" id="lName" placeholder="Last name" required="required">
+                                <input type="text" class="form-control" id="lName" placeholder="Last name"
+                                    required="required">
 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required="required">
-
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email"
+                                    data-bv-emailaddress-message="The value is not a valid email address">
                             </div>
                         </div>
                     </form>
@@ -137,8 +144,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3" id="under-age">
-                <br><br><br><br><br><br>
+            <div class="col-md-12" id="under-age">
+                <div class="shake-slow shake-constant"><img
+                        src="https://www.tabc.state.tx.us/licensing/bg_permit/lessonbuilder_files/No-Alcohol-Under-21-resized.gif"
+                        alt="Under 21"></div>
                 <p class="text"> <strong>Please revisit when you are old enough!</strong></p>
             </div>
         </div>
@@ -170,7 +179,7 @@
                                 <th>Brewery Name</th>
                                 <th>Location</th>
                                 <th>Phone</th>
-                                <th>Website</th>
+                                <th>More Info</th>
 
                             </tr>
 
@@ -182,10 +191,40 @@
 
                             </tr>
                         </thead>
+                        <tbody>
+
+                        </tbody>
                     </table>
                 </div>
             </div>
         </main>
+        <div id="footer-info" class="row">
+            <div class="col-md-4">
+                <div id="contact-us">
+                    <p>Contact Us:</p>
+                    <a href="https://github.com/KhiryHill/project1">Github Repo</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <footer>
+                    <p>All Rights Reserved - &copy;</p>
+                </footer>
+            </div>
+            <div id="external-links" class="col-md-4">
+                <!--External links(Google, Facebook, and Twitter)-->
+                <ul>
+                    <li>
+                        <a href="https://www.google.com">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.Twitter.com">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!--Content to display if chew or "fill my plate" buttons are pressed-->
     <div class="container page3">
@@ -206,26 +245,56 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Charlotte Restaurants</h2>
-                    <table class="rtable">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>Restaurant Name</th>
                                 <th>Location</th>
                                 <th>Phone Number</th>
-                                <th>Cuisine</th>
+                               <!-- <th>Cuisines</th>-->
                             </tr>
 
                             <tr>
-                                <td id="rName">Firebirds Wood Fired Grill</td>
-                                <td id="rLocation">6801 Northlake Mall Dr</td>
-                                <td id="rPhone">7042951919</td>
-                                <td id="rUrl">firebirdsrestaurants.com</td>
+                                <td id="rName"></td>
+                                <td id="rLocation"></td>
+                                <td id="rPhone"></td>
+                               <!--<td id="rCuisines"></td>-->
                             </tr>
                         </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
                     </table>
                 </div>
             </div>
         </main>
+        <div id="footer-info" class="row">
+            <div class="col-md-4">
+                <div id="contact-us">
+                    <p>Contact Us:</p>
+                    <a href="https://github.com/KhiryHill/project1">Github Repo</a>
+                </div>
+            </div>
+            <div id="footer-content" class="col-md-4">
+                <footer>
+                    <p>All Rights Reserved - Brew & Chew Charlotte&copy;</p>
+                </footer>
+            </div>
+            <div id="external-links" class="col-md-4">
+                <!--External links(Google, Facebook, and Twitter)-->
+                <ul>
+                    <li>
+                        <a href="https://www.google.com">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com">Faceboo</a>
+                    </li>
+                    <li>
+                        <a href="https://www.Twitter.com">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="project.js"></script>
 </body>

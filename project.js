@@ -14,41 +14,43 @@ $(document).ready(function () {
     var database = firebase.database();
     var modal = document.getElementById("fbModal");
     var firstName = document.getElementById('fName')
-   var lastName = document.getElementById('lName')
-   var userEmail = document.getElementById('inputEmail')
-   var form = document.getElementById('form')
+    var lastName = document.getElementById('lName')
+    var userEmail = document.getElementById('inputEmail')
+    var form = document.getElementById('form')
 
     //Create a function to open modal when the "yes" button is pressed
     $("#yesBtn").click(function () {
         modal.style.display = "block";
     });
- //Create a function to validate user input
- // $("#user-input").validate({
- //     rules: {
- //         fName: "required",
- //         lName: "required"
- //     },
- //     email: {
- //         required: true,
- //         email: true
- //     },
- //     messages: {
- //         fName: "Please enter your firstname.",
- //         lName: "Please enter your lastname."
- //     }, email:{
- //         required: "Please enter an email address.",
- //         email: "Please enter a <em>valid</em> email address."
- //     }
- //})
+    //Create a function to validate user input
+    // $("#user-input").validate({
+    //     rules: {
+    //         fName: "required",
+    //         lName: "required"
+    //     },
+    //     email: {
+    //         required: true,
+    //         email: true
+    //     },
+    //     messages: {
+    //         fName: "Please enter your firstname.",
+    //         lName: "Please enter your lastname."
+    //     }, email:{
+    //         required: "Please enter an email address.",
+    //         email: "Please enter a <em>valid</em> email address."
+    //     }
+    //})
     //Create a function to hide the age validation when the submit button is pressed
     $("#submit").on("click", function () {
         event.preventDefault();
         event.stopPropagation();
-        var messages = []
-       if(firstName.value === '' || userEmail.value === "" || lastName.value === '' ){
-           messages.push('First name is required')
-           return
-       }
+        
+       
+        if (firstName.value === '' || userEmail.value === "" || lastName.value === '') {
+            return;
+        }
+      
+        
         modal.style.display = "none";
         $(".page1").hide();
         $(".page2").show();
@@ -99,7 +101,7 @@ $(document).ready(function () {
         $(".page1").show();
     })
 
-var name = "";
+    var name = "";
     var barURL = "https://api.openbrewerydb.org/breweries?by_state=north_carolina";
 
     $.ajax({
@@ -131,14 +133,14 @@ var name = "";
         "url": "https://us-restaurant-menus.p.rapidapi.com/restaurants/zip_code/28213",
         "method": "GET",
         "headers": {
-          "X-RapidAPI-Host": "us-restaurant-menus.p.rapidapi.com",
-          "X-RapidAPI-Key": "a2a146e526msh7075b7250515c75p13d74bjsn4414590d1dc6"
+            "X-RapidAPI-Host": "us-restaurant-menus.p.rapidapi.com",
+            "X-RapidAPI-Key": "a2a146e526msh7075b7250515c75p13d74bjsn4414590d1dc6"
         }
-      }
-      
-      $.ajax(settings).done(function (response) {
+    }
+
+    $.ajax(settings).done(function (response) {
         console.log(response);
-        for (var i= 0; i <response.result.data.length; i++){
+        for (var i = 0; i < response.result.data.length; i++) {
             address = response.result.data[i].address.formatted;
             ResName = response.result.data[i].restaurant_name;
             PhoneNumber = response.result.data[i].restaurant_phone;
@@ -147,39 +149,16 @@ var name = "";
 
             $("#rName").append(ResName + "<br>");
             $("#rLocation").append(address + "<br>");
-            $("#rPhone").append(PhoneNumber+ "<br>");
-            $("#rCuisines").append(Cuisines + "<br>");
-            
+            $("#rPhone").append(PhoneNumber + "<br>");
+           // $("#rCuisines").append(Cuisines + "<br>");
+
             console.log(ResName);
             console.log(PhoneNumber);
             console.log(address);
             console.log(Cuisines)
         }
 
-      });
-
-      var menuitems = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://us-restaurant-menus.p.rapidapi.com/restaurant/47773/menuitems?page=3",
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "us-restaurant-menus.p.rapidapi.com",
-            "x-rapidapi-key": "a2a146e526msh7075b7250515c75p13d74bjsn4414590d1dc6"
-        }
-    }
-    
-    $.ajax(menuitems).done(function (response) {
-        console.log(response);
-
-        for ( var i=0; i <response.result.data.length; i++){
-            menuitemname = response.result.data[i].menu_item_name;
-            menuitem = response.result.data[i].menu_item_pricing;
-
-            console.log(menuitemname);
-            console.log(menuitem);
-        }
     });
+    
 
 });
-

@@ -1,103 +1,302 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <title>Charlotte Bar Crawl</title>
-   <meta charset="UTF-8">
-   <meta name="author" content="team6">
-   <meta name="keywords" content="Bar, Bar Crawl, Charlotte">
-   <meta name="description"
-       content="This is a web app that takes user input and finds the nearest bar to the user as well as it's ratings">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="project.css">
-   <script src="https://code.jquery.com/jquery-3.4.1.js"
-       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-       <script src="project.js"></script>
-=======
-   <link rel="stylesheet" href="project.css">
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-   <script src="https://code.jquery.com/jquery-3.4.1.js"
-       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-       <script src="page-taplist.php"></script>
->>>>>>> 1fdc9fd177ccdc11a3c04e15088064a1b92b3261
+    <title>Brew & Chew Charlotte</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="team6">
+    <meta name="keywords" content="Bar, Bar Crawl, Charlotte">
+    <meta name="description"
+        content="This is a web app that takes user input and finds the nearest bar to the user as well as it's ratings">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/project.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Firebase References -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!--Link jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--Link Favicon-->
+    <link rel="icon" type="image/png" href="C:\Users\debra\project1\assets\images\favicon.png">
+
+    <!--Link Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!--Link CSShake-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake-slow.min.css">
+
 </head>
+
 <body>
-   <div class="container">
-       <div id="header-content">
-           <div class="row">
-               <div class="col-lg-6">
-                   <header>
-                       <h1>Charlotte Bar Crawl</h1>
-                   </header>
-               </div>
-               <div class="col-lg-6">
-                   <button id="button" class="btn btn primary">Fill My Cup!</button>
-               </div>
-           </div>
-       </div>
-       <main>
-           <div class="row">
-               <div class="col-md-5">
-                   <form id="user-info">
-                       <fieldset id="user-info-form">
-                           <label for="">Please Enter Your Zip Code:</label>
-                           <br>
-                           <div id="input">
-                               <input type="text" id="zip-code" name="zip-code" minlength="5" maxlength="5" size="40"
-                                   placeholder="Zip Code">
-                               <input id="button" class="btn btn primary" type="submit">
-                           </div>
-                       </fieldset>
-                   </form>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-lg-12">
-                   <h2>Bars In The Area</h2>
-                   <table class="table">
-                       <caption>Bars In The Area</caption>
-                       <thead>
-                           <tr>
-                               <th>Bar Name</th>
-                               <th>Location</th>
-                               <th>Population</th>
-                               <th>Rating</th>
-                           </tr>
-                       </thead>
-                   </table>
-               </div>
-           </div>
-       </main>
-       <div id="footer-info" class="row">
-           <div class="col-md-4">
-               <div id="contact-us">
-                   <p>Contact Us:</p>
-                   <a href="https://github.com/KhiryHill/project1">Github Repo</a>
-               </div>
-           </div>
-           <div class="col-md-4">
-               <footer>
-                   <p>All Rights Reserved - &copy;</p>
-               </footer>
-           </div>
-           <div id="external-links" class="col-md-4">
-               <!--External links(Google, Facebook, and Twitter)-->
-               <ul>
-                   <li>
-                       <a class="btn btn-block btn-social btn-google" href="https://www.google.com">Google</a>
-                   </li>
-                   <li>
-<a class="btn btn-block btn-social btn-facebook" href="https://www.facebook.com">Facebook</a>
-                   </li>
-                   <li>
-                       <a class="btn btn-block btn-social btn-twitter" href="https://www.Twitter.com">Twitter</a>
-                   </li>
-               </ul>
-           </div>
-       </div>
-   </div>
-   <script src="project.js"></script>
+    <!--Initial page view-->
+    <div class="container iPage">
+        <div id="header-content">
+            <div class="row">
+                <div id="header" class="col-lg-12">
+                    <header>
+                        Brew & Chew Charlotte
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="brewChew">
+            <h1 class="text">What are you in the mood for?</h1>
+            <div class="col-lg-6" id="brew">
+
+                <button type="button" class="btn btn-lg btn-block" id="brewBtn">Brew <i
+                        class="fas fa-beer"></i></button>
+
+                <button type="button" class="btn btn-lg btn-block" id="chewBtn">Chew <i
+                        class="fas fa-utensils"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Age checker view-->
+    <div class="container page1">
+        <div id="header-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <header>
+                        <h1>Brew & Chew Charlotte</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="row" id="age-checker">
+                <h1 class="text" class="text-center">Are you 21 or older?</h1>
+                <div class="col-lg-12" id="brew">
+                    <button type="button" class="btn btn-lg" data-toggle="modal" data-target="fbModal-modal-lg"
+                        id="yesBtn">Yes</button>
+
+                    <button type="button" class="btn btn-lg" id="noBtn">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Display Modal to capture user information is they are 21 or older-->
+    <div class="modal" tabindex="-1" role="dialog" id="fbModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="text" class="modal-title">Please enter your information below: </h5>
+                </div>
+                <div class="modal-body">
+                    <form id="user-input">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="fName" placeholder="First name"
+                                    required="required">
+
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="lName" placeholder="Last name"
+                                    required="required">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email"
+                                    data-bv-emailaddress-message="The value is not a valid email address">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="submit" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Under age page view-->
+    <div class="container page0">
+        <div id="header-content">
+            <div class="row">
+                <div class="col-lg-10">
+                    <header>
+                        <h1>Brew & Chew Charlotte</h1>
+                    </header>
+                </div>
+                <div class="col-lg-2">
+                    <button id="button" class="btn btn primary plateBtn">Fill My Plate!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="under-age">
+                <div class="shake-slow shake-constant"><img
+                        src="https://www.tabc.state.tx.us/licensing/bg_permit/lessonbuilder_files/No-Alcohol-Under-21-resized.gif"
+                        alt="Under 21"></div>
+                <p class="text"> <strong>Please revisit when you are old enough!</strong></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Content to display, if user is 21 or older-->
+    <div class="container page2">
+        <div id="header-content">
+            <div class="row">
+                <div class="col-lg-10">
+                    <header>
+                        <h1>Brew & Chew Charlotte</h1>
+                    </header>
+                </div>
+                <div class="col-lg-2">
+                    <button id="button" class="btn btn primary plateBtn">Fill My Plate!</button>
+                </div>
+            </div>
+        </div>
+        <main>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Charlotte Breweries</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Brewery Name</th>
+                                <th>Location</th>
+                                <th>Phone</th>
+                                <th>More Info</th>
+
+                            </tr>
+
+                            <tr>
+                                <td id="bar-name"></td>
+                                <td id="location"></td>
+                                <td id="phone"></td>
+                                <td id="url"></td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <div id="footer-info" class="row">
+            <div class="col-md-4">
+                <div id="contact-us">
+                    <p>Contact Us:</p>
+                    <a href="https://github.com/KhiryHill/project1">Github Repo</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <footer>
+                    <p>All Rights Reserved - &copy;</p>
+                </footer>
+            </div>
+            <div id="external-links" class="col-md-4">
+                <!--External links(Google, Facebook, and Twitter)-->
+                <ul>
+                    <li>
+                        <a href="https://www.google.com">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.Twitter.com">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Content to display if chew or "fill my plate" buttons are pressed-->
+    <div class="container page3">
+        <div id="header-content">
+            <div class="row">
+                <div class="col-lg-10">
+                    <header>
+                        <h1>Brew & Chew Charlotte</h1>
+                    </header>
+                </div>
+                <div class="col-lg-2">
+                    <button id="button" class="btn btn primary mugBtn">Fill My Mug!</button>
+                </div>
+            </div>
+        </div>
+        <main>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Charlotte Restaurants</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Restaurant Name</th>
+                                <th>Location</th>
+                                <th>Phone Number</th>
+                               <!-- <th>Cuisines</th>-->
+                            </tr>
+
+                            <tr>
+                                <td id="rName"></td>
+                                <td id="rLocation"></td>
+                                <td id="rPhone"></td>
+                               <!--<td id="rCuisines"></td>-->
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <div id="footer-info" class="row">
+            <div class="col-md-4">
+                <div id="contact-us">
+                    <p>Contact Us:</p>
+                    <a href="https://github.com/KhiryHill/project1">Github Repo</a>
+                </div>
+            </div>
+            <div id="footer-content" class="col-md-4">
+                <footer>
+                    <p>All Rights Reserved - Brew & Chew Charlotte&copy;</p>
+                </footer>
+            </div>
+            <div id="external-links" class="col-md-4">
+                <!--External links(Google, Facebook, and Twitter)-->
+                <ul>
+                    <li>
+                        <a href="https://www.google.com">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com">Faceboo</a>
+                    </li>
+                    <li>
+                        <a href="https://www.Twitter.com">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="project.js"></script>
 </body>
+
 </html>

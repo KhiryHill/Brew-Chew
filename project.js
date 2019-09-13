@@ -22,35 +22,18 @@ $(document).ready(function () {
     $("#yesBtn").click(function () {
         modal.style.display = "block";
     });
-    //Create a function to validate user input
-    // $("#user-input").validate({
-    //     rules: {
-    //         fName: "required",
-    //         lName: "required"
-    //     },
-    //     email: {
-    //         required: true,
-    //         email: true
-    //     },
-    //     messages: {
-    //         fName: "Please enter your firstname.",
-    //         lName: "Please enter your lastname."
-    //     }, email:{
-    //         required: "Please enter an email address.",
-    //         email: "Please enter a <em>valid</em> email address."
-    //     }
-    //})
+
     //Create a function to hide the age validation when the submit button is pressed
     $("#submit").on("click", function () {
         event.preventDefault();
         event.stopPropagation();
-        
-       
+
+
         if (firstName.value === '' || userEmail.value === "" || lastName.value === '') {
             return;
         }
-      
-        
+
+
         modal.style.display = "none";
         $(".page1").hide();
         $(".page2").show();
@@ -126,6 +109,39 @@ $(document).ready(function () {
         $("#content-row").hide();
         $(".questions").show();
     });
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://us-restaurant-menus.p.rapidapi.com/restaurants/zip_code/28213",
+        "method": "GET",
+        "headers": {
+            "X-RapidAPI-Host": "us-restaurant-menus.p.rapidapi.com",
+            "X-RapidAPI-Key": "a2a146e526msh7075b7250515c75p13d74bjsn4414590d1dc6"
+        }
+    }
 
-    
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+        for (var i = 0; i < response.result.data.length; i++) {
+            address = response.result.data[i].address.formatted;
+            ResName = response.result.data[i].restaurant_name;
+            PhoneNumber = response.result.data[i].restaurant_phone;
+            Cuisines = response.result.data[i].cuisines;
+
+
+            $("#rName").append(ResName + "<br>");
+            $("#rLocation").append(address + "<br>");
+            $("#rPhone").append(PhoneNumber + "<br>");
+            // $("#rCuisines").append(Cuisines + "<br>");
+
+            console.log(ResName);
+            console.log(PhoneNumber);
+            console.log(address);
+            console.log(Cuisines)
+        }
+
+    });
+
+
 });
+

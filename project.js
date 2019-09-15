@@ -144,7 +144,7 @@ $(document).ready(function () {
             address = response.result.data[i].address.formatted;
             ResName = response.result.data[i].restaurant_name;
             PhoneNumber = response.result.data[i].restaurant_phone;
-            Cuisines = response.result.data[i].cuisines;
+            //Cuisines = response.result.data[i].cuisines;
 
 
             $("#rName").append(ResName + "<br>");
@@ -155,7 +155,7 @@ $(document).ready(function () {
             console.log(ResName);
             console.log(PhoneNumber);
             console.log(address);
-            console.log(Cuisines)
+           // console.log(Cuisines)
         }
 
     });

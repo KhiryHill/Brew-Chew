@@ -118,14 +118,15 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Email"
-                                    data-bv-emailaddress-message="The value is not a valid email address">
+                                    required="required">
                             </div>
                         </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="submit" data-dismiss="modal">Submit</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -245,27 +246,29 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Charlotte Restaurants</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Restaurant Name</th>
-                                <th>Location</th>
-                                <th>Phone Number</th>
-                               <!-- <th>Cuisines</th>-->
-                            </tr>
-
-                            <tr>
-                                <td id="rName"></td>
-                                <td id="rLocation"></td>
-                                <td id="rPhone"></td>
-                               <!--<td id="rCuisines"></td>-->
-                            </tr>
-                        </thead>
-                        <tbody id="table-body">
-
-                        </tbody>
-                    </table>
                 </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Restaurant Name</th>
+                            <th>Location</th>
+                            <th>Phone Number</th>
+                            <!-- <th>Cuisines</th>-->
+                        </tr>
+
+                        <tr>
+                            <td id="rName"></td>
+                            <td id="rLocation"></td>
+                            <td id="rPhone"></td>
+                            <!--<td id="rCuisines"></td>-->
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+
             </div>
         </main>
         <div id="footer-info" class="row">
@@ -297,6 +300,7 @@
         </div>
     </div>
     <script src="project.js"></script>
+    <script src="email-validation.js"></script>
 </body>
 
 </html>

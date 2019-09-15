@@ -16,18 +16,18 @@
    color: black;
 }
 
-   img {
+img {
       height: 400px;
       width: 400px;
       margin-left: 100px;
-   }
+}
 
 #brewChew, #age-checker {      
      margin-top: 200px;
-     margin-left: 250px;
+     margin-left: 350px;
      color: black;
      font-size: 34px;
-   }
+}
 
 h1 {
      font-size: 40px;
@@ -42,7 +42,7 @@ h1 {
    display: none;
 }
 
-#header-content{
+#header-content {
    background-image: url(https://cdn.pixabay.com/photo/2015/02/19/14/16/old-paper-642132_960_720.jpg);
    box-shadow: inset 5px 5px 10px #232323;
    border-radius: 15px;
@@ -50,18 +50,18 @@ h1 {
    text-shadow: 2px 2px 3px #E8E8E8;
 }
 
-header{
+header {
    text-align: center;
    font-weight: bolder;
    font-family: cursive;
    font-size: 40px; 
 }
 
-#user-info{
+#user-info {
    margin-top: 10px;
 }
 
-label{
+label {
    font-size: 25px;
    font-weight: bold
 }
@@ -71,7 +71,7 @@ label{
    font-size: 34px;
 }
 
-main{
+main {
    background-image: url(https://cdn.pixabay.com/photo/2015/02/19/14/16/old-paper-642132_960_720.jpg);
    margin-top: 50px;
    margin-bottom: 50px;
@@ -82,24 +82,24 @@ main{
    border-radius: 15px; 
  }
 
-#input{
+#input {
    margin-top: 20px;
    margin-left: 400px;
    position: relative;
 }
 
-#button{
+#button {
    background-color: #232323;
    color: #E8E8E8;
    border-color: #E8E8E8;
 }
 
-#zip{
+#zip {
    margin-left: 50%;
    display: inline;
 }
 
-#contact-us{
+#contact-us {
   text-align: center;
   font-weight: bold;
 }
@@ -108,7 +108,7 @@ main{
    color: orangered;
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd) {
    color: #E8E8E8;
    background-color: #232323;
    opacity: .80;

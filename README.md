@@ -15,6 +15,11 @@ Demonstrate that we are employer-competitive by:
  * Preparing a professional presentation and repository README for our project
  ______________________________________________________________________________________________________________________
 
+ ### Images
+ <img alt="Brew & Chew" src="./assets/images/Untitled&#32;presentation&#32;(1).jpg">
+ <img alt="brew & Chew" src="./assets/images/Untitled&#32;presentation&#32;(2).jpg">
+ ______________________________________________________________________________________________________________________
+
  ### Technologies Used
  * HTML5
  * Bootstrap

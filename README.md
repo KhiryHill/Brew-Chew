@@ -2,6 +2,7 @@
 ### Overview
 
 We conceived and executed a design that solved a real-world problem by integrating data received from two server-side API requests. Along the way and because collaborative work, we learned agile development methodologies and implemented features and bug fixes using the git branch workflow and pull requests.
+
 _______________________________________________________________________________________________________________________
 
 # What does it do
@@ -14,6 +15,11 @@ When the calls made the name, address, phone number and website are rendered on 
  ### Images
  <img alt="Brew & Chew" src="./assets/images/Untitled&#32;presentation&#32;(1).jpg">
  <img alt="brew & Chew" src="./assets/images/Untitled&#32;presentation&#32;(2).jpg">
+
+ _____________________________________________________________________________________________________________________
+
+ # Deployed Link
+ <a href= "https://khiryhill.github.io/Brew-Chew/">Brew&Chew</a>
  ______________________________________________________________________________________________________________________
 
  ### Technologies Used

@@ -1,19 +1,15 @@
-# project1
+# Brew & Chew
 ### Overview
-Project 1! This is an important step in our full-stack journey as we are now required to use newly acquired skills and knowledge to build a web application from scratch. 
 
 We conceived and executed a design that solved a real-world problem by integrating data received from two server-side API requests. Along the way and because collaborative work, we learned agile development methodologies and implemented features and bug fixes using the git branch workflow and pull requests.
 _______________________________________________________________________________________________________________________
 
-### Learning Objectives
-Demonstrate that we are employer-competitive by:
- * Speaking technically about a feature we implemented in our project
- * Explaining and executing git branching workflow in a collaborative project
- * Resolving merge conflicts
- * Explaining agile software development
- * Designing, building and deploying a client-side web application using GitHub Pages
- * Preparing a professional presentation and repository README for our project
- ______________________________________________________________________________________________________________________
+# What does it do
+
+Our application will offer our user a choice between finding a local restaurant or a brewerie.
+After a selection is made you will enter the require login information, which is stored in firebase.
+This application makes a call to two APIs to locate restaurants and breweries across North Carolina. 
+When the calls made the name, address, phone number and website are rendered on the page.
 
  ### Images
  <img alt="Brew & Chew" src="./assets/images/Untitled&#32;presentation&#32;(1).jpg">
